@@ -49,4 +49,3 @@ async def advice_text(ctx):
 async def advice_video(ctx):
     await ctx.send(random.choice(video))
 
-bot.run("MTE0MTA2MDQ2MzAwMjY0ODYyNg.GAP8Si.7pcMaKHnqmqt9hZIxSp33F3M_eL1irhgbvtaRc")
