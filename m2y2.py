@@ -24,10 +24,17 @@ video = [
      "https://www.youtube.com/watch?v=PoxSvDLVKhU"
 ]
 
+animal = [
+     "https://dzen.ru/a/XIVpZXPIjwC0QUgq?utm_referer=www.google.com",
+     "https://pikabu.ru/story/smeshnyie_i_milyie_zhivotnyie_9217439",
+     "https://www.pravilamag.ru/news/offtop/18-02-2023/693147-kak-neiroset-vidit-jivotnyh-iz-memov-chims-stal-buhankoi-hleba-a-doge-prevratilsya-v-ustrashayushchego-anime-kachka/"
+]
+
 info = ''' Список комманд:
 1. advice - выводит картинку с советом
 2. advice_text - выводит текстовые совет пользователю
-3. advice_video - выводит ролик с советом'''
+3. advice_video - выводит ролик с советом
+4. mem_animal - выводит сайт на мемы с животными '''
 
 @bot.command()
 async def help_bot(ctx):
@@ -49,3 +56,6 @@ async def advice_text(ctx):
 async def advice_video(ctx):
     await ctx.send(random.choice(video))
 
+@bot.command()
+async def mem_animal (ctx):
+    await ctx.send(random.choice(animal))
